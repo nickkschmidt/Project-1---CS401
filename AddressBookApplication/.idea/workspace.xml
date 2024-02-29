@@ -23,7 +23,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -109,7 +109,7 @@
       <workItem from="1709044444125" duration="11388000" />
       <workItem from="1709067418279" duration="7270000" />
       <workItem from="1709134457651" duration="1221000" />
-      <workItem from="1709172614136" duration="4648000" />
+      <workItem from="1709172614136" duration="16502000" />
     </task>
     <servers />
   </component>
