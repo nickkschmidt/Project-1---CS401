@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"address","l":"AddressBookApplication"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"address","l":"Menu"}]
