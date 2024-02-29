@@ -1,2 +1,5 @@
-Terry, jones, streetstreet, dublin, ca, 94568, 9259984652, dead4
-Larry, jones, street street, dublin, ca, 94568, 9259984652, dead4
+Terry, Jones, 47_Under_Street, Dublin, CA, 12934, 592-129-1239, terryjones@gmail.com
+Rebecca, Smith, 23_Over_Street, San_Jose, CA, 21431, 963-574-3980, rebeccalars123@gmail.com
+Larry, Smith, 457_Under_Drive, Pismo_Beach, CA, 43125, 908-473-3451, smith.larry@comcast.net
+Tory, Oblikov, 431_Naple_Drive, Detroit, MI, 47901, 213-407-8012, oblikov.tory577@gmail.com
+Frans, Van_Gestel, 5671_Oberlin_Drive, Lubbock, TX, 71977, 717-903-4612, frans.vg@yahoo.com
