@@ -1,8 +1,12 @@
 package address.data;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
 import java.io.File;
+import java.io.FileReader;
 
 
 import address.AddressBookApplication;
@@ -89,22 +93,31 @@ public class AddressBook {
      */
     public void read(String fn) {
         System.out.println(" ");
-        AddressEntry ae = new AddressEntry();
-        File file = new File(fn);
-//        System.out.println(new File().getAbsolutePath());
-//        Scanner scnr = new Scanner(file);
+        File txt = new File(fn);
+//        System.out.println(txt.exists());
         Scanner scnr = new Scanner(fn);
-        scnr.useDelimiter(",");
-        while (scnr.hasNext()) {
-//            ae.setFirstName(scnr.next());
-//            ae.setLastName(scnr.next());
-//            ae.setStreet(scnr.next());
-//            ae.setCity(scnr.next());
-//            ae.setState(scnr.next());
-//            ae.setZip(scnr.next());
-//            ae.setPhone(scnr.next());
-//            ae.setEmail(scnr.next());
-            AddressEntryList.add(ae);
+        scnr.useDelimiter("\\s+|,|\\n");
+        String line = " ";
+        try {
+            scnr = new Scanner(txt, StandardCharsets.UTF_8);
+            while (scnr.hasNext()) {
+                AddressEntry ae = new AddressEntry();
+                String temp = "";
+                ae.setFirstName(scnr.next());
+                ae.setLastName(scnr.next());
+//                String[] split = line.split(" ");
+                ae.setStreet(scnr.next());
+                ae.setCity(scnr.next());
+                ae.setState(scnr.next());
+                ae.setZip(scnr.next());
+                ae.setPhone(scnr.next());
+                ae.setEmail(scnr.next());
+                AddressEntryList.add(ae);
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
         AddressEntry.iter = 1;
     }

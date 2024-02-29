@@ -131,7 +131,6 @@ public class AddressEntry {
         setEmail(Email);
     }
 
-
     /**
      * @return string - returns formatted list of AddressEntry attributes
      */
